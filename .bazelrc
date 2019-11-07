@@ -1,7 +1,6 @@
 build --verbose_failures
 build --compiler=compiler
-build --cxxopt=--std=c++11
-
+build --cxxopt=--std=c++14
 
 build:aarch64 --crosstool_top=//compilers/arm_compiler:toolchain
 build:aarch64 --host_crosstool_top=@bazel_tools//tools/cpp:toolchain
